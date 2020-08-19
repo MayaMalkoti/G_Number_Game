@@ -1,0 +1,33 @@
+{
+  "name": "luckynumbersgame",
+  "version": "1.0.0",
+  "description": "This is a guess based game where you select a number and the serve tells you whether you guessed right or not. Fun right!!",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k \"tsc -p ./src/server -w\" \"tsc -p ./src/client/ -w\" \"nodemon ./dist/server/server.js\"",
+    "comments": " -k above means kill any process before executing the following commands"
+  },
+  "keywords": [
+    "Socket.io",
+    "Typescript"
+  ],
+  "author": "Mayank Malkoti",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bootstrap": "^4.5.0",
+    "@types/express": "^4.17.7",
+    "@types/jquery": "^3.5.1",
+    "@types/node": "^14.0.27",
+    "@types/socket.io": "^2.1.11",
+    "@types/socket.io-client": "^1.4.33",
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
